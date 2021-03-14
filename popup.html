@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>page-auto-save</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+  </head>
+  <body></body>
+  <body>
+    <div>
+      <h2>Page auto saver</h2>
+      <a href="https://c0510gy.github.io" target="_blank">https://c0510gy.github.io</a>
+      <p>
+        자동 저장을 설정해 두면 10초 간격으로 현재 보고있는 탭의 HTML을 로컬 저장소에 저장합니다. 저장된 페이지의 각
+        아이템을 클릭하면 해당 HTML을 다운받을 수 있습니다.
+      </p>
+      <h3>자동 저장 설정</h3>
+      <label class="switch">
+        <input id="autosave" type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <h3>저장된 페이지</h3>
+      <button type="button" id="buttonRefreshSavedPages">새로고침</button>
+      <button type="button" id="buttonClearSavedPages">모두 지우기</button>
+      <ul id="savedPages"></ul>
+    </div>
+  </body>
+</html>
